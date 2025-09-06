@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Interativo para Geração de Leads</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto max-w-5xl p-4 sm:p-6 lg:p-8">
+        
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-blue-800">Checklist Interativo de Marketing Digital</h1>
+            <p class="mt-2 text-lg text-gray-600">Um Guia Estratégico para Agências de Viagens no Ceará</p>
+        </header>
+
+        <div id="progress-container" class="mb-8 px-4">
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar" style="width: 0%;">0%</div>
+            </div>
+        </div>
+
+        <main id="checklist-container" class="space-y-8"></main>
+
+    </div>
+
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden">
+        <div id="modal-content" class="bg-white rounded-lg shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-white p-4 border-b flex justify-between items-center z-10">
+                <h2 id="modal-title" class="text-xl font-bold text-blue-700">Detalhes da Etapa</h2>
+                <button id="modal-close" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+            </div>
+            <div id="modal-body" class="p-6 text-base text-gray-700 leading-relaxed prose max-w-none">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
