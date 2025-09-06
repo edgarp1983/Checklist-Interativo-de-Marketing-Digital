@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // =================================================================
-    // DADOS DO CHECKLIST
+    // DADOS COMPLETOS DO CHECKLIST
     // =================================================================
     const checklistData = [
         {
@@ -27,10 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "1.2.4", title: "Estratégia de Diferenciação", details: "Após identificar o 'ruído' do mercado (o que todos estão fazendo), a oportunidade estratégica reside em fazer o oposto deliberadamente. Se todos competem por preço, a diferenciação pode vir da confiança e da especialização." }
                     ]
                 },
-                // ... (Restante dos dados)
+                {
+                    title: "1.3. Mapeamento de Palavras-Chave de Cauda Longa",
+                    items: [
+                        { id: "1.3.1", title: "Entender o Conceito de Cauda Longa", details: "Palavras-chave de cauda longa são termos de busca com três ou mais palavras. Elas têm um volume de busca menor, mas uma taxa de conversão drasticamente superior porque a especificidade revela uma forte intenção de compra." },
+                        { id: "1.3.2", title: "Geração de Palavras-Chave", details: "Derivar listas de palavras-chave diretamente das dores e objetivos de cada persona. Utilizar ferramentas como o Planejador de Palavras-chave do Google, o autocompletar da busca do Google e plataformas como Semrush para expandir a lista e validar volumes." },
+                        { id: "1.3.3", title: "Aplicação Consistente", details: "A palavra-chave de cauda longa deve ser usada em toda a jornada do cliente: no título do anúncio, na headline da Landing Page e na mensagem de saudação do WhatsApp. Essa consistência aumenta drasticamente a confiança e a conversão." }
+                    ]
+                }
             ]
         },
-        // Adicione as outras fases do checklistData aqui...
         {
             phase: "II. FASE DE CRIAÇÃO DE ATIVOS DE ALTA CONVERSÃO",
             description: "O objetivo é traduzir os insights do planejamento em ativos digitais que persuadem o visitante a agir.",
@@ -41,11 +47,98 @@ document.addEventListener('DOMContentLoaded', () => {
                         { id: "2.1.1", title: "Estratégia de Granularidade", details: "Criar uma Landing Page específica para cada campanha, oferta e persona, evitando páginas genéricas que apresentam múltiplas ofertas. Essa abordagem maximiza a relevância e a taxa de conversão." },
                         { id: "2.1.2", title: "Checklist Estrutural da LP", details: "Garantir que a LP contenha 11 elementos essenciais: Título conectado ao anúncio, Subtítulo com benefício, Imagem/Vídeo de herói, Seção de Dores e Soluções, Lista de Benefícios, Prova Social, CTA Principal acima da dobra, CTA Secundário no final, Design Responsivo, Carregamento rápido (<3s) e Ausência de links de navegação externos." }
                     ]
+                },
+                {
+                    title: "2.2. Aplicação Estratégica de Gatilhos Mentais",
+                    items: [
+                        { id: "2.2.1", title: "Prova Social (Implementação Ética)", details: "Utilizar depoimentos específicos que contam uma mini-história, números concretos ('Mais de 300 famílias viajaram conosco') e, o mais poderoso, vídeos de clientes reais (UGC - User-Generated Content)." },
+                        { id: "2.2.2", title: "Urgência e Escassez (Implementação Crível)", details: "Motivar a ação imediata criando a percepção de que a oportunidade pode ser perdida. Urgência baseada em tempo (ex: bônus válido por 48h) e escassez baseada em quantidade (ex: 'apenas 2 quartos disponíveis'). Os gatilhos devem ser genuínos para não destruir a confiança." }
+                    ]
+                },
+                {
+                    title: "2.3. Otimização do Call-to-Action (CTA) para WhatsApp",
+                    items: [
+                        { id: "2.3.1", title: "Texto, Design e Posicionamento do CTA", details: "O texto deve ser orientado à ação e ao benefício (ex: 'Quero um Roteiro Personalizado Grátis'). O design deve ter cor de destaque e o ícone do WhatsApp. O CTA principal deve estar acima da dobra e ser repetido ao longo da página." },
+                        { id: "2.3.2", title: "Microcopy de Suporte", details: "Adicionar um pequeno texto abaixo do botão para quebrar objeções e reduzir a ansiedade do clique. Exemplos: 'Resposta em até 5 minutos', 'Conversa sem compromisso'." }
+                    ]
+                },
+                {
+                    title: "2.4. Produção de Criativos em Vídeo",
+                    items: [
+                        { id: "2.4.1", title: "Estratégia de Funil para Vídeos", details: "No Topo de Funil (Reels/TikTok), o objetivo é inspiração e alcance, com dicas rápidas e bastidores. No Fundo de Funil (Anúncios), o objetivo é conversão, usando vídeos de prova social e depoimentos de clientes (UGC)." },
+                        { id: "2.4.2", title: "Sistema de Coleta de UGC", details: "Coletar conteúdo gerado pelo usuário (UGC) criando uma hashtag de marca, promovendo concursos ou solicitando ativamente aos clientes satisfeitos que compartilhem seus registros em troca de um benefício." },
+                        { id: "2.4.3", title: "Estratégia de Impulsionamento em 2 Etapas", details: "Primeiro, impulsionar vídeos de topo de funil para criar uma audiência qualificada (pessoas que assistiram a 50%+ do vídeo). Segundo, direcionar os anúncios de conversão para essa audiência aquecida, reduzindo o Custo por Lead." }
+                    ]
                 }
-                // Adicionar outras seções da Fase II...
             ]
         },
-        // Adicionar Fases III, IV, V...
+        {
+            phase: "III. FASE DE RASTREAMENTO E MENSURAÇÃO DE RESULTADOS",
+            description: "Esta fase técnica garante que as decisões sejam baseadas em dados completos e precisos, permitindo a otimização real do ROI.",
+            sections: [
+                {
+                    title: "3.1. Implementação do Rastreamento Server-Side",
+                    items: [
+                        { id: "3.1.1", title: "Implementar a API de Conversões (CAPI) da Meta", details: "O rastreamento tradicional via Pixel (client-side) é falho. A API de Conversões (server-side) estabelece um canal de comunicação direto e mais confiável entre o servidor do seu site e o da Meta, garantindo a coleta de dados mais completa." },
+                        { id: "3.1.2", title: "Configurar via Google Tag Manager (GTM)", details: "A implementação mais robusta é via GTM, usando um contêiner Web e um Server-Side. O fluxo: o contêiner Web captura os eventos, envia para o contêiner do Servidor, que por sua vez os retransmite para a Meta via CAPI." },
+                        { id: "3.1.3", title: "Configurar Deduplicação de Eventos", details: "É crucial garantir que o mesmo evento não seja contado duas vezes (pelo Pixel e pela CAPI). Isso é feito enviando um parâmetro de evento idêntico (event_id) por ambos os canais, permitindo que a Meta deduplique automaticamente." }
+                    ]
+                },
+                {
+                    title: "3.2. Rastreamento de Conversões Offline (Vendas no WhatsApp)",
+                    items: [
+                        { id: "3.2.1", title: "Capturar Identificadores de Clique", details: "Configurar a Landing Page para capturar os parâmetros de URL `gclid` (Google) e `fbclid` (Meta) quando um usuário clica em um anúncio. Esses IDs são essenciais para conectar o clique à venda." },
+                        { id: "3.2.2", title: "Criar um Registro Centralizado de Leads", details: "Manter um CRM ou uma planilha simples com os dados de cada lead, incluindo os identificadores de clique (gclid/fbclid), status da venda e valor da venda." },
+                        { id: "3.2.3", title: "Importar os Dados de Venda", details: "Periodicamente (a cada 1-2 dias), exportar a lista de vendas concluídas (com seus respectivos gclid/fbclid, valor e data) e fazer o upload para as plataformas de anúncios (Google e Meta). Isso 'ensina' o algoritmo a buscar pessoas que compram, não apenas que clicam." }
+                    ]
+                }
+            ]
+        },
+        {
+            phase: "IV. FASE DE ESTRUTURAÇÃO E OTIMIZAÇÃO DE CAMPANHAS",
+            description: "Organizar as campanhas de forma lógica para testar, otimizar e escalar os resultados.",
+            sections: [
+                {
+                    title: "4.1. Segmentação de Públicos de Alta Performance (Meta Ads)",
+                    items: [
+                        { id: "4.1.1", title: "Públicos Frios (Interesse e Comportamento)", details: "Para alcançar novos clientes, use a segmentação por comportamentos de viagem (ex: 'viajantes frequentes') e interesses (ex: 'Jericoacoara', 'Kitesurf'). Use a estratégia de camadas (layering) para refinar a audiência combinando múltiplos critérios." },
+                        { id: "4.1.2", title: "Públicos Semelhantes (Lookalikes - LAL)", details: "A ferramenta de prospecção mais poderosa. Forneça à Meta uma lista de seus melhores clientes e ela encontrará novas pessoas com perfis semelhantes. A qualidade da fonte é tudo: um LAL de compradores é o 'padrão ouro'." }
+                    ]
+                },
+                {
+                    title: "4.2. Estratégias de Remarketing (Público Quente)",
+                    items: [
+                        { id: "4.2.1", title: "Criar Segmentos de Remarketing Essenciais", details: "Exiba anúncios para pessoas que já interagiram com sua marca. Segmentos cruciais: Visitantes da LP que não converteram, Visualizadores de 50%+ dos seus vídeos e Pessoas que se engajaram com seus perfis sociais." },
+                        { id: "4.2.2", title: "Estruturar Exclusões", details: "Em cada público, exclua usuários que já avançaram no funil para não desperdiçar verba. Por exemplo, no público de remarketing para visitantes da LP, exclua quem já comprou." }
+                    ]
+                },
+                {
+                    title: "4.3. Estrutura de Campanha Recomendada (Fase Inicial)",
+                    items: [
+                        { id: "4.3.1", title: "Campanha 1: Prospecção (CBO)", details: "Use o Orçamento de Campanha Advantage+ (CBO) para permitir que a Meta aloque a verba automaticamente para o melhor conjunto de anúncios. Teste seus melhores públicos (ex: LAL 1% de Compradores vs. Interesses em Camadas) e de 3 a 5 criativos diferentes em cada." },
+                        { id: "4.3.2", title: "Campanha 2: Remarketing", details: "Crie uma campanha separada com um orçamento menor para seus públicos de remarketing. Use criativos focados em prova social e urgência para convencer quem já demonstrou interesse." }
+                    ]
+                }
+            ]
+        },
+        {
+            phase: "V. CONCLUSÃO E PRÓXIMOS PASSOS",
+            description: "O sucesso sustentável é resultado de um sistema integrado. A execução consistente de todo o processo é o que separa as agências que lutam por clientes daquelas que constroem um fluxo previsível de vendas.",
+            sections: [
+                {
+                    title: "5.1. Adoção de uma Cultura de Testes",
+                    items: [
+                        { id: "5.1.1", title: "Adotar uma Cultura de Testes", details: "O próximo nível de performance será alcançado através de uma cultura de testes contínuos: testar novos criativos, otimizar o texto da Landing Page, experimentar novos segmentos de público e refinar as ofertas." }
+                    ]
+                },
+                 {
+                    title: "5.2. Foco no Ativo Mais Valioso",
+                    items: [
+                        { id: "5.2.1", title: "Focar no Ativo Mais Valioso", details: "É imperativo reconhecer que o ativo mais valioso que uma agência construirá com esta estratégia não são os leads individuais, mas sim os dados agregados. Uma lista de clientes robusta e dados de conversão offline precisos são o combustível para escalar as campanhas de forma previsível e lucrativa no futuro." }
+                    ]
+                }
+            ]
+        }
     ];
 
 
@@ -157,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Evento de clique para o botão "Saiba Mais"
                     taskElement.querySelector('.learn-more-btn').addEventListener('click', () => {
                         modalTitle.textContent = item.title;
-                        modalBody.innerHTML = item.details.replace(/\n/g, '<br>'); // Substitui quebras de linha por <br>
+                        modalBody.innerHTML = item.details.replace(/\n/g, '<br>');
                         modal.classList.remove('hidden');
                     });
 
